@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_label_pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesanan:"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesanan"
+        android:layout_below="@id/tv_label_pesanan"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_rounded_corner"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tv_label_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Harga:"
+        android:layout_below="@id/tv_pesanan"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp 0"
+        android:layout_below="@id/tv_label_total_price"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_rounded_corner"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tv_label_amount_paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Uang Dibayar:"
+        android:layout_below="@id/tv_total_price"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_amount_paid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan jumlah uang"
+        android:layout_below="@id/tv_label_amount_paid"
+        android:inputType="number"
+        android:background="@drawable/bg_rounded_corner"
+        android:padding="8dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembalian: Rp 0"
+        android:visibility="gone"
+        android:layout_below="@id/et_amount_paid"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_rounded_corner"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bayar"
+        android:layout_below="@id/tv_change"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
